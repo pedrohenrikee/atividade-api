@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.home {
+    background-color: black;
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.sobre {
+    background-color: red;
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.sobre p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.curso {
+    background-color: blueviolet;
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.contato {
+   background-color: blue;
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/* Container principal com visual moderno */
+#root.contato {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #0f172a; /* Fundo escuro sofisticado (Slate 900) */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #f8fafc;
+}
+
+/* Título estilizado com gradiente */
+#root.contato .titulo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 28px;
+    text-align: center;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+/* Organização do formulário */
+#root.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilização dos inputs e textarea */
+#root.contato input,
+#root.contato textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: #f8fafc;
+    background-color: #1e293b; /* Tom mais claro que o fundo (Slate 800) */
+    border: 1px solid #334155;
+    border-radius: 12px;
+    transition: all 0.25s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Placeholder discreto */
+#root.contato input::placeholder,
+#root.contato textarea::placeholder {
+    color: #64748b;
+}
+
+/* Tamanho customizado da textarea */
+#root.contato textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Efeito de foco moderno com brilho */
+#root.contato input:focus,
+#root.contato textarea:focus {
+    border-color: #38bdf8;
+    background-color: #0f172a;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+/* Botão de envio com gradiente e transição fluida */
+#root.contato button[type="submit"] {
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-top: 6px;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+/* Hover e active do botão */
+#root.contato button[type="submit"]:hover {
+    opacity: 0.92;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+}
+
+#root.contato button[type="submit"]:active {
+    transform: translateY(0);
+}
